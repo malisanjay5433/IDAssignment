@@ -1,5 +1,5 @@
-# IDAssignment
-# SwiftUI Server Communication Example
+# IDAssignment [Tech Presentation](https://tin-ixora-70e.notion.site/Technical-Presentation-943a4cb4143a4855871455d0a9374fe5)
+## SwiftUI Server Communication Example
 This iOS application demonstrates basic client-server communication using SwiftUI and Combine. The server is integrated into the application and acknowledges requests. The example adheres to SOLID, DRY, and KISS principles, promoting a clean and modular architecture.
 
 ## Project Structure
