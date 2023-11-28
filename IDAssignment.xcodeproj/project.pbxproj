@@ -15,6 +15,7 @@
 		9B713EF72B15E43000346504 /* IDAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B713EF62B15E43000346504 /* IDAssignmentUITests.swift */; };
 		9B713EF92B15E43000346504 /* IDAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B713EF82B15E43000346504 /* IDAssignmentUITestsLaunchTests.swift */; };
 		9B713F062B15E9AC00346504 /* ServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B713F052B15E9AC00346504 /* ServerService.swift */; };
+		9B713F082B15ED0700346504 /* RequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B713F072B15ED0700346504 /* RequestViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		9B713EF62B15E43000346504 /* IDAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAssignmentUITests.swift; sourceTree = "<group>"; };
 		9B713EF82B15E43000346504 /* IDAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9B713F052B15E9AC00346504 /* ServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerService.swift; sourceTree = "<group>"; };
+		9B713F072B15ED0700346504 /* RequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				9B713EDB2B15E42E00346504 /* IDAssignmentApp.swift */,
 				9B713EDD2B15E42E00346504 /* ContentView.swift */,
+				9B713F072B15ED0700346504 /* RequestViewModel.swift */,
 				9B713F052B15E9AC00346504 /* ServerService.swift */,
 				9B713EDF2B15E43000346504 /* Assets.xcassets */,
 				9B713EE12B15E43000346504 /* Preview Content */,
@@ -262,6 +265,7 @@
 			files = (
 				9B713EDE2B15E42E00346504 /* ContentView.swift in Sources */,
 				9B713EDC2B15E42E00346504 /* IDAssignmentApp.swift in Sources */,
+				9B713F082B15ED0700346504 /* RequestViewModel.swift in Sources */,
 				9B713F062B15E9AC00346504 /* ServerService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
