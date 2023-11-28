@@ -15,10 +15,10 @@ protocol RequestViewModelProtocol : ObservableObject{
 class RequestViewModel: RequestViewModelProtocol {
     private let serverService = ServerService()
     private var cancellables: Set<AnyCancellable> = []
-
+    
     @Published var acknowledgmentMessage: String?
     @Published var chatBotResponse: String?
-
+    
     func sendRequest() {
         serverService.acknowledgeRequest { success in
             DispatchQueue.main.async {
@@ -32,7 +32,7 @@ class RequestViewModel: RequestViewModelProtocol {
             }
         }
     }
-
+    
     func sendChatBotRequest() {
         serverService.chatBotResponse { response in
             DispatchQueue.main.async {
@@ -40,20 +40,20 @@ class RequestViewModel: RequestViewModelProtocol {
             }
         }
     }
-
+    
     func sendMultipleRequests() {
         let acknowledgmentPublisher = Future<Bool, Never> { promise in
             self.serverService.acknowledgeRequest { success in
                 promise(.success(success))
             }
         }
-
+        
         let chatBotResponsePublisher = Future<String, Never> { promise in
             self.serverService.chatBotResponse { response in
                 promise(.success(response))
             }
         }
-
+        
         Publishers.CombineLatest(acknowledgmentPublisher, chatBotResponsePublisher)
             .sink { ackSuccess, chatResponse in
                 DispatchQueue.main.async {

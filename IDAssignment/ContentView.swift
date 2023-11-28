@@ -30,7 +30,7 @@ struct ContentView: View {
             .padding()
             .buttonStyle(.borderedProminent)
             .tint(.black)
-          }
+        }
         VStack{
             Button("Chat with Bot") {
                 requestViewModel.sendChatBotRequest()
@@ -43,7 +43,7 @@ struct ContentView: View {
                     .foregroundColor(acknowledgmentMessage.contains("Not") ? .red : .green)
                     .fontWeight(.heavy)
                     .padding()
-
+                
             }
             if let chatBotResponse = requestViewModel.chatBotResponse {
                 Text("Heyy! I'm bot: \(chatBotResponse)")

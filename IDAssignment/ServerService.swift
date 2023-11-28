@@ -11,6 +11,9 @@ protocol ServerServiceProtocol {
     func chatBotResponse(completion: @escaping (String) -> Void)
 }
 class ServerService: ServerServiceProtocol {
+    
+    // MARK: - ServerServiceProtocol Methods
+    
     func acknowledgeRequest(completion: @escaping (Bool) -> Void) {
         // Simulate server response delay
         DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
@@ -18,6 +21,7 @@ class ServerService: ServerServiceProtocol {
             completion(true)
         }
     }
+    
     func chatBotResponse(completion: @escaping (String) -> Void) {
         // Simulate chat bot response delay
         DispatchQueue.global().asyncAfter(deadline: .now() + Double.random(in: 1...5)) {
