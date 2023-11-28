@@ -28,3 +28,14 @@ Press the "Run" button in Xcode.
 
 ## Acknowledgments
 The application uses a ServerService to simulate server responses. Unit tests for the server service are included in ServerServiceTests.swift. The project follows best practices, including SOLID, DRY, and KISS principles, to ensure a maintainable and readable codebase.
+
+## Code Review 
+When working on a project, especially in a team or professional environment, breaking down the work into reviewable sub-tasks is crucial for better collaboration, clarity, and efficient progress tracking, Here's how you could have split the work into reviewable sub-tasks for this project
+  - Task: Set Up Project and Initial Structure
+  - Task: Implement ServerServiceProtocol
+  - Task: Create RequestViewModel
+  - Task: Design UI Components in SwiftUI
+  - Task: Apply Best Practices and Principles
+  - Task: Write Unit Tests
+  - Task: Add README and Documentation
+  - Task: Create Technical Presentation
